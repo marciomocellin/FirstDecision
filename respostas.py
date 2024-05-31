@@ -56,12 +56,13 @@ sklearn.metrics.roc_auc_score
 #Suponha que você tenha uma base de dados contendo textos jurídicos, como decisões judiciais, petições e documentos legais. A base de dados inclui informações sobre o conteúdo do texto, data, jurisdição e outras informações relevantes. Seu objetivo é criar um sistema de recomendação que sugira textos jurídicos semelhantes a um texto de referência.
 #Para todos os itens: Informe as bibliotecas usadas, se necessário, o motivo de cada decisão, explore as possibilidades.
 #a. Descreva como você desenvolveria o sistema de recomendação que recebe um texto de referência e sugere os textos mais semelhantes a ele na base de dados.
-#b. Como você avaliaria esse sistema de recomendação?
-#c. Suponha que novos textos jurídicos sejam adicionados diariamente. Como você manteria o sistema de recomendação atualizado e garantiria que ele continue a fornece recomendações relevantes?
+# R. Primeiramente usaria alguma lista de stopwords para remover palavras ruídos. Usaria um algoritmo Word2vec para para transportar as palavras do texto para um espaço vetorial e analisaria a semelhança comparando a distancia entre os vetores.
 
-# a. Primeiramente usaria alguma lista de stopwords para remover palavras ruídos. Usaria um algoritmo Word2vec para para transportar as palavras do texto para um espaço vetorial e analisaria a semelhança comparando a distancia entre os vetores.
-# b. Usaria métricas como acurácia e F1-score na avaliação, intrínseca e extrínseca, seu desempenho.
-# c. Periodicamente teria que recalcular as representações vetoriais dos textos e atualizar o índice de similaridade.
+#b. Como você avaliaria esse sistema de recomendação?
+# R. Usaria métricas como acurácia e F1-score na avaliação, intrínseca e extrínseca, seu desempenho.
+
+#c. Suponha que novos textos jurídicos sejam adicionados diariamente. Como você manteria o sistema de recomendação atualizado e garantiria que ele continue a fornece recomendações relevantes?
+# R. Periodicamente teria que recalcular as representações vetoriais dos textos e atualizar o índice de similaridade.
 
 ##%
 # TESTE 2 - 
